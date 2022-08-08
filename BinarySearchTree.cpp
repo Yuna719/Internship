@@ -32,12 +32,6 @@ binNode* insert(binNode* root, int item){
 	return root;
 }
 
-binNode *findMin(binNode *root){
-	if(root==NULL) cout<<"Empty Tree."<<endl;
-	else if(root->left==NULL) return root;
-	else return(findMin(root->left));
-}
-
 void inOrderTraversal(binNode *root){
 	if(root!=NULL){
 	    inOrderTraversal(root->left);
